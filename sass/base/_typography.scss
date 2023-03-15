@@ -7,3 +7,16 @@ body{
     font-weight: 400;
     text-transform: uppercase;
 }
+
+.text-primary{
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 600;
+}
+
+.text-tertiary{
+    font-size: 1.8rem;
+    color: rgb(var(--color-grey-light-2));
+    font-weight: 400;
+}

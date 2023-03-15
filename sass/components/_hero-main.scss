@@ -1,0 +1,33 @@
+.hero__main{
+    .container-mini{
+        height: 100%;
+        padding-block: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        .hero__icon{
+            width: 20rem;
+            align-self: center;
+        }
+
+        .hero__seen{
+
+            .top{
+                display: flex;
+                align-items: center;
+                width: 100%;
+
+                p{
+                    margin-inline: 1rem;
+                }
+                .line{
+                    flex-grow: 1;
+                    height: 1px;
+                    background: rgb(var(--color-grey-light-2));
+                }
+            }
+        }
+    }
+    
+}

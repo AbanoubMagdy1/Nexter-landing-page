@@ -4,7 +4,7 @@
   --color-primary-dark: 179, 133, 81;
   --color-secondary: 16, 29, 44;
   --color-grey-light-1: #f9f7f6;
-  --color-grey-light-2: #aaa;
+  --color-grey-light-2: 170, 170, 170;
   --color-grey-dark-1: #54483A;
   --color-grey-dark-2: #6D5D4B;
   --font-primary: "Nunito", sans-serif;
@@ -65,6 +65,12 @@ img {
   height: auto;
 }
 
+.container-mini {
+  width: 80rem;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
 .hero {
   min-height: 80vh;
   display: flex;
@@ -101,24 +107,41 @@ body {
   text-transform: uppercase;
 }
 
+.text-primary {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 600;
+}
+
+.text-tertiary {
+  font-size: 1.8rem;
+  color: rgb(var(--color-grey-light-2));
+  font-weight: 400;
+}
+
 .mb-verysmall {
   margin-bottom: 0.5rem;
 }
 
 .mb-small {
-  margin-bottom: 2rem;
+  margin-bottom: 1.3rem;
 }
 
 .mb-medium {
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
 }
 
 .mb-large {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .center {
   text-align: center;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 @media (max-width: 600px) {
@@ -201,6 +224,31 @@ aside .hamburger .line {
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #aaa;
+}
+
+.hero__main .container-mini {
+  height: 100%;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero__main .container-mini .hero__icon {
+  width: 20rem;
+  align-self: center;
+}
+.hero__main .container-mini .hero__seen .top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.hero__main .container-mini .hero__seen .top p {
+  margin-inline: 1rem;
+}
+.hero__main .container-mini .hero__seen .top .line {
+  flex-grow: 1;
+  height: 1px;
+  background: rgb(var(--color-grey-light-2));
 }
 
 /*# sourceMappingURL=style.css.map */
