@@ -1,3 +1,9 @@
 body{
     font-size: 1.6rem;
 }
+
+.text-secondary{
+    color: rgb(var(--color-primary));
+    font-weight: 400;
+    text-transform: uppercase;
+}

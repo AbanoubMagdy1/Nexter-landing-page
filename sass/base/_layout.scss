@@ -1,0 +1,29 @@
+.hero{
+    min-height: 80vh;
+    display: flex;
+
+    @include respond(tab){
+        flex-direction: column;
+    }
+
+    &__main{
+        flex-grow: 3;
+        background-image: linear-gradient(
+            rgba(var(--color-secondary), .93),
+            rgba(var(--color-secondary), .93)
+        ) ,url('./img/hero.jpeg') ;
+        background-size: cover;
+        background-position: center;
+
+        @include respond(tab){
+            height: 90vh
+        }
+    }
+
+    &__realtors{
+        flex-grow: 1;
+        min-width: 12rem;
+        background: rgb(var(--color-secondary));
+    }
+
+}

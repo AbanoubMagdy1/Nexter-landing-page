@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Nunito:wght@300;400;700&display=swap');
+
+:root{
+    --color-primary: 197, 153, 99;
+    --color-primary-dark: 179, 133, 81;
+
+    --color-secondary: 16, 29, 44;
+
+    --color-grey-light-1: #f9f7f6;
+    --color-grey-light-2: #aaa;
+
+    --color-grey-dark-1: #54483A;
+    --color-grey-dark-2: #6D5D4B;
+
+    --font-primary: 'Nunito', sans-serif;
+    --font-display: 'Josefin Sans', sans-serif;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -12,7 +30,15 @@ html {
 }
 
 body{
+    --aside-dim: 7rem;
     min-height: 100vh;
+    font-family: var(--font-primary);
+    display: grid;
+    grid-template: 1fr/ var(--aside-dim) 1fr;
+
+    @include respond(tab){
+        grid-template: var(--aside-dim) 1fr / 1fr;
+    }
 }
 
 ul{list-style: none;}
@@ -27,4 +53,9 @@ button{
     &:focus{
         outline: none;
     }
+}
+
+img{
+    width: 100%;
+    height: auto;
 }

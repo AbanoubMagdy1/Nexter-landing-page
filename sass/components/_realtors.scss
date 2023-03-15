@@ -1,0 +1,41 @@
+.hero__realtors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .realtors{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        .realtor{
+            display: flex;
+            gap: 1rem;
+
+            &__img{
+                width: 7rem;
+                height: 7rem;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            &__data{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .realtor-name{
+                    font-size: 2.2rem;
+                    color: white
+                }
+
+                .realtor-sold{
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                    color: #aaa
+                }
+            }
+        }
+    }
+}
