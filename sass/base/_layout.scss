@@ -15,7 +15,8 @@
     &__main{
         flex-grow: 3;
         background-image: linear-gradient(
-            rgba(var(--color-secondary), .93),
+            to right bottom,
+            rgba(var(--color-secondary), .8),
             rgba(var(--color-secondary), .93)
         ) ,url('./img/hero.jpeg') ;
         background-size: cover;
