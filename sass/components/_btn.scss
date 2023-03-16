@@ -1,0 +1,16 @@
+.btn{
+    padding: 1.2rem 1.8rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    transition: .3s background-color;
+    letter-spacing: 1px;
+
+    &-primary{
+        background-color: rgb(var(--color-primary));
+        color: white;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(var(--color-primary-dark));
+        }
+    }
+}

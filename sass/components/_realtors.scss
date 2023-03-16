@@ -4,10 +4,20 @@
     justify-content: center;
     align-items: center;
 
+    @include respond(tab){
+        padding-block: 4rem;
+    }
+
     .realtors{
         display: flex;
         flex-direction: column;
         gap: 5rem;
+
+        @include respond(tab){
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
         .realtor{
             display: flex;

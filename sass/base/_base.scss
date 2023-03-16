@@ -33,12 +33,15 @@ body{
     --aside-dim: 7rem;
     min-height: 100vh;
     font-family: var(--font-primary);
-    display: grid;
-    grid-template: 1fr/ var(--aside-dim) 1fr;
+    display: flex;
 
     @include respond(tab){
-        grid-template: var(--aside-dim) 1fr / 1fr;
+        flex-direction: column;
     }
+}
+
+main{
+    flex: 1;
 }
 
 ul{list-style: none;}

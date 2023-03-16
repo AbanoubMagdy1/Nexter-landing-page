@@ -1,7 +1,7 @@
 .hero__main{
     .container-mini{
         height: 100%;
-        padding-block: 2rem;
+        padding-block: 4rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -25,6 +25,17 @@
                     flex-grow: 1;
                     height: 1px;
                     background: rgb(var(--color-grey-light-2));
+                }
+            }
+
+            .logos{
+                display: flex;
+                justify-content: space-around;
+
+                .logo{
+                    width: 10rem;
+                    max-width: 22%;
+                    filter: brightness(70%);
                 }
             }
         }

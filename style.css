@@ -20,7 +20,7 @@
 html {
   font-size: 62.5%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   html {
     font-size: 56.25%;
   }
@@ -35,13 +35,16 @@ body {
   --aside-dim: 7rem;
   min-height: 100vh;
   font-family: var(--font-primary);
-  display: grid;
-  grid-template: 1fr/var(--aside-dim) 1fr;
+  display: flex;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   body {
-    grid-template: var(--aside-dim) 1fr/1fr;
+    flex-direction: column;
   }
+}
+
+main {
+  flex: 1;
 }
 
 ul {
@@ -75,7 +78,7 @@ img {
   min-height: 80vh;
   display: flex;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .hero {
     flex-direction: column;
   }
@@ -86,14 +89,13 @@ img {
   background-size: cover;
   background-position: center;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .hero__main {
     height: 90vh;
   }
 }
 .hero__realtors {
-  flex-grow: 1;
-  min-width: 12rem;
+  flex: 1 0 25rem;
   background: rgb(var(--color-secondary));
 }
 
@@ -103,6 +105,7 @@ body {
 
 .text-secondary {
   color: rgb(var(--color-primary));
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -159,13 +162,29 @@ body {
   }
 }
 
+.btn {
+  padding: 1.2rem 1.8rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  transition: 0.3s background-color;
+  letter-spacing: 1px;
+}
+.btn-primary {
+  background-color: rgb(var(--color-primary));
+  color: white;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: rgb(var(--color-primary-dark));
+}
+
 aside {
   background: rgb(var(--color-primary));
   padding: 2.5rem 1rem;
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   aside {
     flex-direction: row;
     justify-content: flex-end;
@@ -179,7 +198,7 @@ aside .hamburger {
   width: 4rem;
   margin-inline: auto;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   aside .hamburger {
     margin-inline: initial;
   }
@@ -196,10 +215,22 @@ aside .hamburger .line {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1000px) {
+  .hero__realtors {
+    padding-block: 4rem;
+  }
+}
 .hero__realtors .realtors {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+}
+@media (max-width: 1000px) {
+  .hero__realtors .realtors {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .hero__realtors .realtors .realtor {
   display: flex;
@@ -228,7 +259,7 @@ aside .hamburger .line {
 
 .hero__main .container-mini {
   height: 100%;
-  padding-block: 2rem;
+  padding-block: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -249,6 +280,15 @@ aside .hamburger .line {
   flex-grow: 1;
   height: 1px;
   background: rgb(var(--color-grey-light-2));
+}
+.hero__main .container-mini .hero__seen .logos {
+  display: flex;
+  justify-content: space-around;
+}
+.hero__main .container-mini .hero__seen .logos .logo {
+  width: 10rem;
+  max-width: 22%;
+  filter: brightness(70%);
 }
 
 /*# sourceMappingURL=style.css.map */
