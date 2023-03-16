@@ -5,10 +5,11 @@
   --color-secondary: 16, 29, 44;
   --color-grey-light-1: #f9f7f6;
   --color-grey-light-2: 170, 170, 170;
-  --color-grey-dark-1: #54483A;
-  --color-grey-dark-2: #6D5D4B;
+  --color-grey-dark-1: 84, 72, 58;
+  --color-grey-dark-2: 109, 93, 75;
   --font-primary: "Nunito", sans-serif;
   --font-display: "Josefin Sans", sans-serif;
+  --layout-width: min(120rem, 95%);
 }
 
 * {
@@ -296,6 +297,48 @@ aside .hamburger .line {
   width: 10rem;
   max-width: 22%;
   filter: brightness(70%);
+}
+
+.features {
+  margin: 8rem auto;
+  display: flex;
+  width: var(--layout-width);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+@media (max-width: 600px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+  }
+}
+.features .feature {
+  flex: 1 0 30rem;
+  max-width: 40rem;
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 600px) {
+  .features .feature {
+    flex: initial;
+  }
+}
+.features .feature__icon {
+  font-size: 4rem;
+  color: rgb(var(--color-primary));
+}
+.features .feature__title {
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgb(var(--color-grey-dark-2));
+}
+.features .feature__text {
+  font-size: 1.7rem;
+  color: rgb(var(--color-grey-dark-1));
+  letter-spacing: 1px;
+  line-height: 23px;
 }
 
 /*# sourceMappingURL=style.css.map */
