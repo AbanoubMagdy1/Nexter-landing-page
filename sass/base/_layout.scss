@@ -4,6 +4,11 @@
     margin: 0 auto;
 }
 
+.section{
+    margin: 10rem auto;
+    width: var(--layout-width);
+}
+
 .hero{
     min-height: 80vh;
     display: flex;
