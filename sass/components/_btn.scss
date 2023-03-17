@@ -5,12 +5,18 @@
     transition: .3s all;
     letter-spacing: 1px;
 
-    &:hover{
+    &:hover:not(.stable){
         transform: translateY(-.2rem);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
     }
-    &:active{
+    &:active:not(.stable){
         transform: translateY(.2rem);
+    }
+
+    &-block{
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
     &-primary{
