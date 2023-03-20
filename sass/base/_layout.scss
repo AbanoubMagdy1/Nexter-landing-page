@@ -1,5 +1,5 @@
 .container-mini{
-    width: 80rem;
+    width: 100rem;
     max-width: 95%;
     margin: 0 auto;
 }
@@ -21,7 +21,7 @@
         flex-grow: 3;
         background-image: linear-gradient(
             to right bottom,
-            rgba(var(--color-secondary), .8),
+            rgba(var(--color-secondary), .9),
             rgba(var(--color-secondary), .93)
         ) ,url('./img/hero.jpeg') ;
         background-size: cover;

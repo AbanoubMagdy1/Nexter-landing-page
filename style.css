@@ -70,7 +70,7 @@ img {
 }
 
 .container-mini {
-  width: 80rem;
+  width: 100rem;
   max-width: 95%;
   margin: 0 auto;
 }
@@ -91,7 +91,7 @@ img {
 }
 .hero__main {
   flex-grow: 3;
-  background-image: linear-gradient(to right bottom, rgba(var(--color-secondary), 0.8), rgba(var(--color-secondary), 0.93)), url("./img/hero.jpeg");
+  background-image: linear-gradient(to right bottom, rgba(var(--color-secondary), 0.9), rgba(var(--color-secondary), 0.93)), url("./img/hero.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -111,13 +111,13 @@ body {
 
 .text-secondary {
   color: rgb(var(--color-primary));
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 .text-primary {
-  font-size: 3.5rem;
+  font-size: 5rem;
   letter-spacing: 2px;
   color: white;
   font-weight: 600;
@@ -350,7 +350,7 @@ aside .hamburger .line {
 }
 
 .gallery {
-  width: 98% !important;
+  width: 95%;
   display: grid;
   grid-template: repeat(7, 1fr)/repeat(8, 1fr);
   gap: 1rem;
@@ -424,7 +424,7 @@ aside .hamburger .line {
 .homes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
-  gap: 2rem;
+  gap: 5rem;
 }
 .homes .home__img {
   width: 100%;
