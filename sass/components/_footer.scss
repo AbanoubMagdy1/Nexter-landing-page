@@ -1,0 +1,32 @@
+.footer {
+    background-color: rgb(var(--color-secondary));
+
+    > div {
+        width: 95%;
+        margin: 0rem auto;
+        padding-block: 3rem;
+    }
+
+    &__list{
+        margin-inline: auto;
+        display: flex;
+        flex-wrap: wrap;
+        
+        column-gap: 12rem;
+        row-gap: 4rem;
+
+        li{
+            
+            a{
+                color: rgb(var(--color-grey-light-2));
+            }
+        }
+    }
+
+    &__text{
+        text-align: center;
+        padding-inline: 4rem;
+        color: rgb(var(--color-grey-light-2));
+
+    }
+}

@@ -374,7 +374,7 @@ aside .hamburger .line {
 }
 .gallery__image-3 {
   grid-column: 6/1 span;
-  grid-row: 1/1 span;
+  grid-row: 1/2 span;
 }
 .gallery__image-4 {
   grid-column: 7/2 span;
@@ -510,13 +510,14 @@ aside .hamburger .line {
 }
 .testimonials__left-fig.fig-2 {
   top: 50%;
-  left: 50%;
+  left: 40%;
   width: 55%;
   height: 40%;
   transform: translateX(20%);
 }
 @media (max-width: 1000px) {
   .testimonials__left-fig.fig-2 {
+    left: 50%;
     width: 45%;
     transform: unset;
   }
@@ -541,6 +542,30 @@ aside .hamburger .line {
   font-size: 1.5rem;
   font-style: italic;
   color: rgb(var(--color-grey-dark-2));
+}
+
+.footer {
+  background-color: rgb(var(--color-secondary));
+}
+.footer > div {
+  width: 95%;
+  margin: 0rem auto;
+  padding-block: 3rem;
+}
+.footer__list {
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12rem;
+  row-gap: 4rem;
+}
+.footer__list li a {
+  color: rgb(var(--color-grey-light-2));
+}
+.footer__text {
+  text-align: center;
+  padding-inline: 4rem;
+  color: rgb(var(--color-grey-light-2));
 }
 
 /*# sourceMappingURL=style.css.map */
